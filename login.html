@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AlmostMet Login</title>
+
+<link rel="stylesheet" href="login.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AlmostMet</h1>
+
+    <input
+    id="email"
+    type="email"
+    placeholder="Email">
+
+    <input
+    id="password"
+    type="password"
+    placeholder="Password">
+
+    <button onclick="signup()">
+        Sign Up
+    </button>
+
+    <button onclick="login()">
+        Login
+    </button>
+
+    <p id="status"></p>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>
