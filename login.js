@@ -61,6 +61,26 @@ error.message;
 return;
 }
 
-window.location =
-"map.html";
+const {
+data:{user}
+}
+=
+await client.auth.getUser();
+
+const {data}=
+await client
+.from("profiles")
+.select("*")
+.eq("id",user.id)
+.single();
+
+if(data){
+
+window.location="map.html";
+
+}else{
+
+window.location="profile.html";
+
+}
 }
