@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlmostMet</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+</head>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<body>
+
+<nav>
+    <div class="logo">AlmostMet</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>The Person You Noticed.</h1>
+
+        <h2>The Conversation You Never Started.</h2>
+
+        <p>
+            Discover people nearby who are open to connecting.
+            No phone numbers. No awkward introductions.
+            Just a wave away.
+        </p>
+
+        <div class="buttons">
+
+            <button class="btn-red">
+                Get Started
+            </button>
+
+            <button class="btn-dark">
+                Learn More
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="how">
+
+    <h2>How It Works</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>See Nearby</h3>
+            <p>Discover people around you.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-hand"></i>
+            <h3>Wave</h3>
+            <p>Send a friendly wave.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-comments"></i>
+            <h3>Connect</h3>
+            <p>Start meaningful conversations.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="safety">
+
+    <h2>Privacy First</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Protected Location</h3>
+        </div>
+
+        <div class="card">
+            <h3>Visibility Control</h3>
+        </div>
+
+        <div class="card">
+            <h3>No Phone Number</h3>
+        </div>
+
+        <div class="card">
+            <h3>Block & Report</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 AlmostMet</p>
+
+</footer>
+
+</body>
+
+<script>
+window.addEventListener('scroll',()=>{
+
+let scroll = window.pageYOffset;
+
+document.querySelector('.hero')
+.style.backgroundPositionY =
+scroll * 0.5 + 'px';
+
+});
+</script>
+
+</html>
